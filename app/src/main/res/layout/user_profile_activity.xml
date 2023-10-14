@@ -1,18 +1,23 @@
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:gravity="center"
+    android:background="#B3E5FC"
     android:weightSum="5"
     android:padding="20dp">
 
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/baseline_person_24">
+        android:src="@drawable/baseline_person_24"
+        android:layout_marginBottom="50dp">
 
     </ImageView>
+
+
+
 
 
 
@@ -21,7 +26,10 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center_horizontal"
-                android:weightSum="4">
+                android:weightSum="4"
+                android:layout_marginVertical="10dp">
+
+
 
 
                 <TextView
@@ -29,7 +37,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Name: "
+                    android:gravity="center"
                     android:textSize="18dp"
+                    android:layout_gravity="center"
                     android:layout_weight="2" />
 
                 <TextView
@@ -37,6 +47,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="jhon doe"
+                    android:layout_gravity="center"
+                    android:gravity="center"
                     android:textSize="24dp"
                     android:layout_weight="2">
 
@@ -44,50 +56,59 @@
 
             </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginVertical="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:inputType="textMultiLine"
+            android:text="Account no/ Username:  "
+            android:layout_gravity="center"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/accountBalanceTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="12458963"
+            android:textSize="24dp">
+
+        </TextView>
+
+
+    </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center_horizontal"
-                android:weightSum="4">
+                android:weightSum="4"
+                android:layout_marginVertical="10dp">
 
 
                 <TextView
 
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Account no/Username:  "
-                    android:textSize="18dp"
-                    android:layout_weight="2" />
-
-                <TextView
-                    android:id="@+id/accountBalanceTextView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="12458963"
-                    android:textSize="24dp"
-                    android:layout_weight="2">
-
-                </TextView>
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_horizontal"
-                android:weightSum="4">
-
-
-                <TextView
-
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
                     android:text="email:  "
-                    android:textSize="18dp"
-                    android:layout_weight="2" />
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="18dp" />
 
                 <TextView
                     android:id="@+id/contactNoTextView"
@@ -95,7 +116,9 @@
                     android:layout_height="wrap_content"
                     android:text="987654321"
                     android:textSize="24dp"
-                    android:layout_weight="2">
+                    android:layout_weight="2"
+                    android:layout_gravity="center"
+                    android:gravity="center">
 
                 </TextView>
 
@@ -107,7 +130,8 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center_horizontal"
-                android:weightSum="4">
+                android:weightSum="4"
+                android:layout_marginVertical="10dp">
 
 
                 <TextView
@@ -115,6 +139,8 @@
                     android:layout_height="wrap_content"
                     android:text="contact no.:  "
                     android:textSize="18dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
                     android:layout_weight="2" />
 
                 <TextView
@@ -123,17 +149,14 @@
                     android:layout_height="wrap_content"
                     android:text="jhonedoe@gmail.com"
                     android:textSize="24dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
                     android:layout_weight="2">
 
                 </TextView>
 
 
             </LinearLayout>
-
-
-
-
-
 
     <Button
         android:id="@+id/transactionHistoryButton"
