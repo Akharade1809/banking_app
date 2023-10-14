@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">DSCEBank</string>
+
+    <string-array name="transfer_types">
+        <item>Between Own Accounts</item>
+        <item>To Other Users</item>
+        <item>International Transfer</item>
+    </string-array>
+
+    <string-array name="bill_types">
+        <item>Utility Bill</item>
+        <item>Credit Card Bill</item>
+    </string-array>
+</resources>

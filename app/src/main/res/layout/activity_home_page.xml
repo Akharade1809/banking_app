@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#03A9F4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/baseline_account_balance_24">
+                </ImageButton>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="HOME"
+                    android:textColor="@color/white"
+                    android:textSize="32dp">
+                </TextView>
+            </LinearLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+    </Toolbar>
+
+    <!-- Logout Button -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:elevation="50dp"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/logout"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="Logout"
+                android:src="@drawable/baseline_logout_24" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:layout_gravity="center_vertical"
+                android:textSize="22dp">
+            </TextView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Account Overview Button -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:elevation="50dp"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/accountOverviewButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="Account Overview"
+                android:src="@drawable/baseline_person_24" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:layout_gravity="center_vertical"
+                android:textSize="22dp">
+            </TextView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Funds Transfer Button -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:elevation="50dp"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/fundsTransferButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="Funds Transfer"
+                android:src="@drawable/baseline_attach_money_24" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Transfer Funds"
+                android:layout_gravity="center_vertical"
+                android:textSize="22dp">
+            </TextView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Bill Payments Button -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:elevation="50dp"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/billPaymentsButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="Bill Payments"
+                android:src="@drawable/baseline_cabin_24" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bill Payments"
+                android:layout_gravity="center_vertical"
+                android:textSize="22dp">
+            </TextView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Add Funds Button -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:elevation="50dp"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/depositWithdrawalButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="Deposit and Withdrawal"
+                android:src="@drawable/baseline_assured_workload_24" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Funds"
+                android:layout_gravity="center_vertical"
+                android:textSize="22dp">
+            </TextView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Customer Service Button -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:elevation="50dp"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/customerServiceButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="Customer Service"
+                android:src="@drawable/baseline_support_agent_24" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chat Support"
+                android:layout_gravity="center_vertical"
+                android:textSize="22dp">
+            </TextView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
